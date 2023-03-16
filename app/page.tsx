@@ -27,7 +27,7 @@ export default function Home() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    router.push(`/api/thumbnail?guest=${encodeSpecialChars(guest.name)}&role=${encodeSpecialChars(guest.role)}&image=${encodeSpecialChars(guest.image)}`)
+    router.push(`/api/thumbnail?guest=${encodeSpecialChars(guest.name)}&role=${encodeSpecialChars(guest.role)}&image=${guest.image}`)
   }
 
   return (

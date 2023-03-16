@@ -50,7 +50,17 @@ export async function GET(req: NextRequest) {
           }}
           className='rounded-full'
         />
-
+        <img
+          src={imageUrl}
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            right: 60,
+            height: '600',
+            zIndex: -1,
+          }}
+          alt="Foto del invitadx"
+        />
         <div
           style={{
             display: 'flex'
